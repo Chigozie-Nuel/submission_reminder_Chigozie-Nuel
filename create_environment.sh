@@ -1,22 +1,12 @@
 #!/bin/bash
 
-# prompt for user name
-
 read -p "Enter your name : " name
-
-# creating main directory called submission_reminder_name
 
 mkdir -p submission_reminder_$name
 
-# navigating into the main directory
-
 cd submission_reminder_$name
 
-# creating subdirectories
-
 mkdir -p app modules assets config
-
-# creating app/reminder.sh
 
 cat > app/reminder.sh << 'EOF'
 
@@ -36,8 +26,6 @@ echo "--------------------------------------------"
 
 check_submissions $submissions_file
 EOF
-
-# creating modules/functions.sh
 
 cat > modules/functions.sh << 'EOF'
 
@@ -63,8 +51,6 @@ function check_submissions {
 }
 EOF
 
-# creating assets/submissions.txt
-
 cat > assets/submissions.txt << 'EOF'
 
 student, assignment, submission status
@@ -79,16 +65,12 @@ Brian, Git, submitted
 Allan, Shell Basics, submitted
 EOF
 
-# creating config/config.env
-
 cat > config/config.env << 'EOF'
 
 # This is the config file
 ASSIGNMENT="Shell Navigation"
 DAYS_REMAINING=2
 EOF
-
-# creating startup.sh
 
 cat > startup.sh << 'EOF'
 
@@ -99,12 +81,9 @@ echo -e "--------------------------------------------"
 sh app/reminder.sh
 EOF
 
-# making all .sh files executable
-
 chmod +x startup.sh app/reminder.sh modules/functions.sh
-
-# running application
 
 echo "To test the application :"
 echo "1. cd submission_reminder_$name "
 echo "2. ./startup.sh"
+
