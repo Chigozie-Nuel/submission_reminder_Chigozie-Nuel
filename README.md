@@ -62,7 +62,7 @@ Assignment: Shell Navigation
 Days remaining to submit: 2 days
 --------------------------------------------
 Checking submissions in ./assets/submissions.txt
-Reminder: Chizikora has not submitted the Shell Navigation assignment!
+Reminder: Chinemerem has not submitted the Shell Navigation assignment!
 Reminder: Divine has not submitted the Shell Navigation assignment!
 ```
 
