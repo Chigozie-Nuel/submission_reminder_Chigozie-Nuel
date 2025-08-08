@@ -50,8 +50,8 @@ student, assignment, submission status
 Chinemerem, Shell Navigation, not submitted
 Chiagoziem, Git, submitted
 Divine, Shell Navigation, not submitted
-Chibuzor, Shell Basics, submitted
-John doe, Git, not submitted
+Anissa, Shell Basics, submitted
+Chizikora, Git, not submitted
 Jane, Shell Permissions, not submitted
 Ezra, Shell Navigation, submitted
 Brian, Git, submitted
@@ -79,4 +79,5 @@ chmod +x startup.sh app/reminder.sh modules/functions.sh
 echo "To test the application :"
 echo "1. cd submission_reminder_$name "
 echo "2. ./startup.sh"
+
 
